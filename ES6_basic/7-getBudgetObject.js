@@ -5,4 +5,4 @@ export default function getBudgetObject(income, gdp, capita) {
     capita,
   };
   return budget;
-  }
+}
