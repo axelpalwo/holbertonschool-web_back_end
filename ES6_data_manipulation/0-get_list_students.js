@@ -1,5 +1,5 @@
-function getListStudents() {
-  let objarr = [
+export function getListStudents() {
+  const objarr = [
     {
       id: 1,
       firstName: 'Guillaume',
