@@ -1,5 +1,5 @@
 function getListStudents() {
-  objarr = [
+  let objarr = [
     {
       id: 1,
       firstName: 'Guillaume',
