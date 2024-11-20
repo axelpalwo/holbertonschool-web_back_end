@@ -1,4 +1,4 @@
-export function getListStudents() {
+export default function getListStudents() {
     const objarr = [
         {
             firstName: 'Guillaume',
