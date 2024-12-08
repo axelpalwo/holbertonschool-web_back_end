@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from typing import List
-
+"""Import List for variable annotation"""
 
 def sum_list(input_list: List[float]) -> float:
     """Returns the sum of a list of floats."""
