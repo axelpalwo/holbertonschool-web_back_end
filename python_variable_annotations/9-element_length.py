@@ -4,7 +4,7 @@ from typing import Iterable, Sequence, List, Tuple
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
-    """Returns a list of tuples, where each tuple contains an 
+    """Returns a list of tuples, where each tuple contains an
     element of the iterable
     and the length of that element.
     """
