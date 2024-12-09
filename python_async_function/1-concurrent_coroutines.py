@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import asyncio
 from typing import List
-from basic_async_syntax import wait_random
+wait_random = __import__('1-concurrent_coroutines').wait_random
 """ Importing wait_random funct"""
 
 
