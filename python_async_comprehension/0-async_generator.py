@@ -2,7 +2,7 @@
 import asyncio
 import random
 from typing import Generator
-"""First task from this project sssssssssssss"""
+"""First task from this project"""
 
 
 async def async_generator() -> Generator[float, None, None]:
@@ -11,7 +11,6 @@ async def async_generator() -> Generator[float, None, None]:
     It waits for 1 second before yielding each random number.
     """
 
-    # Loop aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     for _ in range(10):
         await asyncio.sleep(1)
         yield random.uniform(0, 10)
