@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
+"""Second task of this project"""
 import asyncio
 import random
 from typing import Generator, List
 async_generator = __import__('0-async_generator').async_generator
-"""Second task of this project"""
 
 
 async def async_comprehension() -> List[float]:

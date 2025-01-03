@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
+"""Last task of this project"""
 import asyncio
 import time
 from typing import List
 async_comprehension = __import__('1-async_comprehension').async_comprehension
-"""Last task of this project"""
 
 
 async def measure_runtime() -> float:
