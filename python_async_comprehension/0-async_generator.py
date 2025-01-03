@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+"""First task from this project"""
 import asyncio
 import random
 from typing import Generator
-"""First task from this project"""
 
 
 async def async_generator() -> Generator[float, None, None]:
