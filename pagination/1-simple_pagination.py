@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Second taks of this project"""
 import csv
 import math
 from typing import List
@@ -25,6 +26,7 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
+        """Validates parameters and looks for data with those indexes"""
         try:
             assert isinstance(page, int) and isinstance(page_size, int), (
                 "AssertionError raised when page and page_size are not ints")
