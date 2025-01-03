@@ -26,9 +26,8 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         try:
-            assert isinstance(page, int) and isinstance(page_size, int), (
-            "AssertionError raised when page and page_size are not ints"
-            )
+            assert isinstance(page, int) and isinstance(page_size, int), (\
+            "AssertionError raised when page and page_size are not ints")
             assert page >= 0, ("AssertionError raised with negative values")
             assert page_size > 0, ("AssertionError raised with 0")
 
