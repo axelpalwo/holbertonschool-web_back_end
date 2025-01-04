@@ -41,6 +41,7 @@ class Server:
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
         """Returns data from an index and next index"""
+        self.indexed_dataset()
         assert 0 <= index < len(self.__indexed_dataset), "Index out of range"
     
         data = []
