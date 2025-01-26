@@ -15,12 +15,12 @@ function countStudents(path) {
 
     lines.slice(1).forEach((line) => {
       const [firstname, , , field] = line.split(',');
-      NUMBER_OF_STUDENTS++;
+      NUMBER_OF_STUDENTS += 1;
       if (field === 'CS') {
-        CS++;
+        CS += 1;
         ListCS.push(firstname);
       } else if (field === 'SWE') {
-        SWE++;
+        SWE += 1;
         ListSWE.push(firstname);
       }
     });
