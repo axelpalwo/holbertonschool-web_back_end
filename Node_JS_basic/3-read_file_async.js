@@ -36,10 +36,8 @@ function countStudents(path) {
           }
         });
 
-        console.log(`Number of students: ${NUMBER_OF_STUDENTS}`);
-        console.log(`Number of students in CS: ${CS}. List: ${ListCS.join(', ')}`);
-        console.log(`Number of students in SWE: ${SWE}. List: ${ListSWE.join(', ')}`);
-        resolve();
+        let result = `Number of students: ${NUMBER_OF_STUDENTS}\nNumber of students in CS: ${CS}. List: ${ListCS.join(', ')}\nNumber of students in SWE: ${SWE}. List: ${ListSWE.join(', ')}\n`;
+        resolve(result);
       } catch (error) {
         reject(new Error('Cannot load the database'));
       }
@@ -47,4 +45,4 @@ function countStudents(path) {
   });
 }
 
-module.exports = countStudents;
+module.exports = { countStudents };
