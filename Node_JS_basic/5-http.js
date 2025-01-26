@@ -1,19 +1,17 @@
-// 5-http.js
-
 const http = require('http');
 const { countStudents } = require('./3-read_file_async'); // Importa la función countStudents
 
 const app = http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-
   // Maneja la solicitud GET
   if (req.method === 'GET') {
     if (req.url === '/') {
-      res.end('Hello Holberton School!\n');
+      res.writeHead(200, { 'Content-Type': 'text/plain' });
+      res.end('Hello Holberton School!');
     } else if (req.url === '/students') {
       // Llama a countStudents y maneja la promesa
       countStudents('./database.csv')
         .then((csvdata) => {
+          res.writeHead(200, { 'Content-Type': 'text/plain' });
           res.end(
             `This is the list of our students\n${
               csvdata}`,
